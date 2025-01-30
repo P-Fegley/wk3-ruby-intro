@@ -51,11 +51,8 @@ temp = 68
 precipitation = 10
 if temp >= 65 && precipitation == 0
     puts "Beautiful day!"
-else
-    if precipitation > 0
-        puts "We really needed this"
-    end
-    if temp < 65
-        puts "Brr"
-    end
+elsif precipitation > 0
+    puts "We really needed this"
+elsif temp < 65
+    puts "Brr"
 end
