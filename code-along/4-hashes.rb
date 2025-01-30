@@ -2,7 +2,7 @@
 # is the same as where this file is located and then run:
 # ruby 4-hashes.rb
 
-# Hashes are lists of *key-value pairs*
+# Hashes are lists of *key-value pairs* e.g. {"key" => "value"}
 array1 = []
 hash1 = { 
     "name" => "Preston",  # the => (hash rocket) symbol is only for hashes
@@ -53,3 +53,18 @@ other_profile = { :name => "Preston", :location => "Kingsville"}
 next_profile = { name: "Preston", location: "Kingsville"}
 
 p next_profile
+
+# Practical example of nesting arrays & hashes
+# Arrays are just lists of things, hashes are more like databases
+ebay = [
+    { "name" => "Power cords",
+        "price" => "$14.95"
+    },
+    { "name" => "TV",
+        "price" => "$800",
+        "description" => "4K resolution",
+        "buyers" => [
+            { "name" => "Bob", "email" => "bob@yahoo.com" }
+        ]
+    }
+]
